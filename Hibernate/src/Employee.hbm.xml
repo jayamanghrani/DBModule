@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--copy DTD from hibernate sample mapping  xml files- search in searchbar-*.hbm.xml
+
+ so that XML parser can read .
+	like - in html we use <!DOCTYPE but html is simple so not compulsory in that>
+-->
+
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+	<class name="com.jaya.hibernate.Employee" table="Employee">
+	<id name="empNo" column="Emp_No"/>
+	<property name="empName" column="Emp_Name"/>
+	<property name="empSal" column="Emp_Sal"/>
+	</class>	
+	</hibernate-mapping>
