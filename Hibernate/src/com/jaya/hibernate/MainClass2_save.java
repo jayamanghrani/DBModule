@@ -29,8 +29,10 @@ public class MainClass2_save
 		{
 			tx=session.beginTransaction();
 			
-			System.out.println("enter id");
-			int No=s.nextInt();
+			
+			  System.out.println("enter id"); 
+			  int No=s.nextInt();
+			 
 			
 			System.out.println("enter empname");	
 			String Name=s.next();
@@ -84,3 +86,24 @@ public class MainClass2_save
 		
 	}
 }
+
+// save will insert record
+
+
+// if we give new id ---hibernate will generate insert query
+
+// if we give existing id---hibernateException(ConstraintVoilationException)
+
+// If we will not give id ,( only ename and sal) then save will generate id automatically ,
+
+/*
+ * SQL> select * from employee;
+ * 
+ * EMP_NO 		EMP_NAME              EMP_SAL
+ * ---------- -------------------- ---------- 
+ * 0 				test			 10000
+ */
+
+
+// But this is only for once, 2nd time will give error, 
+//because it generate id as "null" then convert null into integer 0
