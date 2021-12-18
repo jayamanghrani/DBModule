@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--copy DTD from hibernate sample mapping  xml files- search in searchbar-*.hbm.xml
+
+ so that XML parser can read .
+	like - in html we use <!DOCTYPE but html is simple so not compulsory in that>
+-->
+
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+	<class name="com.hibernate.entity.Account" table="Accounts">
+	<id name="acctId" column="acct_id"/>
+	<property name="acctName" column="acct_name"/>
+	<property name="acctBal" column="acct_bal"/>
+	</class>	
+	</hibernate-mapping>

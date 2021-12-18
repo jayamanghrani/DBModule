@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--copy DTD from hibernate sample configuration xml files- search in searchbar- hibernate.cfg>-->
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        
+  <hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+        <property name="hibernate.connection.username">myhibernatebatch</property>
+        <property name="hibernate.connection.password">mystudents</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@//Jaya:1521/XE</property>
+        <property name="show_sql">true</property>
+        <mapping resource="com/hibernate/entity/Account.hbm.xml"/>       
+    </session-factory>
+</hibernate-configuration>      
